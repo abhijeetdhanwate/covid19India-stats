@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19: India Stats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="title">Covid19 <span>India</span></li>
+            <li id="credit">Source: <a href="https://www.covid19india.org/">https://www.covid19india.org/</a></li>
+        </ul>
+    </nav>
+    <!-- 
+    <p class="active">Total Active cases: <span id="active"></span></p>
+    <p class="recovered">Total Recovered cases: <span id="recovered"></span></p>
+    <p class="deaths">Total Death cases: <span id="deaths"></span></p> -->
+
+    <div class="total-info">
+        <div class="container container-a">
+            <h2>Confirmed</h2>
+            <p id="confirmed"></p>
+        </div>
+        <div class="container container-b">
+            <h2>Active</h2>
+            <p id="active"></p>
+        </div>
+        <div class="container container-c">
+            <h2>Recovered</h2>
+            <p id="recovered"></p>
+        </div>
+        <div class="container container-d">
+            <h2>Deaths</h2>
+            <p id="deaths"></p>
+        </div>
+    </div>
+
+    <div class="states">
+        <div class="state state-head">
+            <p>state</p>
+            <p>Confirmed</p>
+            <p>Active</p>
+            <p>Recovered</p>
+            <p>Deaths</p>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; margin-top: 5rem;">Made with <span style="color: tomato;">Love</span> by Abhijeet</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
