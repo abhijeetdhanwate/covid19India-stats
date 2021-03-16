@@ -120,3 +120,21 @@ nav ul li span {
     background-color: black;
     color: wheat;
 }
+
+
+
+@media (max-width: 700px) {
+    body {
+        margin: auto 0.5rem;
+        font-size: 1rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    .state-container{
+        display: block;
+        overflow-x: scroll;
+    }
+}
