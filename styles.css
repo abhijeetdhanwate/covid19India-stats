@@ -32,7 +32,7 @@ nav ul li span {
 }
 
 #title {
-    font-size: 2rem;
+    font-size: clac(2vw + 12px);
 }
 
 #credit a{
@@ -103,6 +103,7 @@ nav ul li span {
 .states {
     display: flex;
     flex-direction: column;
+    z-index: -1;
 }
 
 .state {
@@ -145,6 +146,10 @@ nav ul li span {
     h2 {
         font-size: large;
     }
+    
+    #title {
+        font-size: 3vw;
+    }
 
     nav ul {
         flex-direction: column;
@@ -163,5 +168,9 @@ nav ul li span {
 @media (max-width: 500px){
     .states, .states > * {
         font-size: 8pt
+    }
+
+    #title {
+        font-size: 5vw;
     }
 }
