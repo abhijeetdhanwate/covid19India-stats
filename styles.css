@@ -115,10 +115,6 @@ nav ul li span {
     width: 24%;
 }
 
-.col {
-    overflow-x: scroll;
-}
-
 /* .state {
     display: flex;
     justify-content: space-around;
