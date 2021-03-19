@@ -43,6 +43,7 @@ nav ul li span {
 .total-info {
     display: flex;
     justify-content: space-around;
+    flex-basis: 25%;
     text-align: center;
 }
 
@@ -153,12 +154,20 @@ nav ul li span {
         text-align: center;
     }
 
+    .container {
+        margin-bottom: 1rem;
+    }
+
     .total-info {
         flex-wrap: wrap;
     }
 
+    .container {
+        flex-basis: 40%;
+    }
+
     .state {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 }
 
