@@ -18,7 +18,7 @@ axios.get(url)
         deaths = document.createElement("p");
 
         state.classList.add('state');
-        stateName.classList.add('state-container', 'stateName');
+        stateName.classList.add('state-container', 'stateName', 'col');
         confirmed.classList.add('state-container', 'confirmed');
         active.classList.add('state-container', 'active');
         recovered.classList.add('state-container', 'recovered');

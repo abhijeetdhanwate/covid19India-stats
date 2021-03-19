@@ -12,11 +12,11 @@ body {
     font-weight: bolder;
 }
 
-.title-credit {
+/* .title-credit {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 nav ul{
     display: flex;
@@ -24,6 +24,7 @@ nav ul{
     justify-content: space-between;
     border-bottom: 1px solid gray;
     margin-bottom: 2rem;
+    padding-right: 2rem;
 }
 
 nav ul li span {
@@ -92,11 +93,30 @@ nav ul li span {
     text-align: left;
 }
 
-.state {
+/* .state {
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(5, 1fr);
     padding-left: 0.8rem;
+} */
+
+.states {
+    display: flex;
+    flex-direction: column;
+}
+
+.state {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.state > * {
+    width: 24%;
+}
+
+.col {
+    overflow-x: scroll;
 }
 
 /* .state {
@@ -121,20 +141,31 @@ nav ul li span {
     color: wheat;
 }
 
-
-
-@media (max-width: 700px) {
+@media (max-width: 700px){
     body {
-        margin: auto 0.5rem;
-        font-size: 1rem;
+        margin: auto 1rem;
     }
 
-    #title {
-        font-size: 1.5rem;
+    h2 {
+        font-size: large;
     }
 
-    .state-container{
-        display: block;
-        overflow-x: scroll;
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .total-info {
+        flex-wrap: wrap;
+    }
+
+    .states, .states > * {
+        font-size: 11pt
+    }
+}
+
+@media (max-width: 500px){
+    .states, .states > * {
+        font-size: 8pt
     }
 }
