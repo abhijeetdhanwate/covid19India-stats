@@ -43,6 +43,7 @@ nav ul li span {
 .total-info {
     display: flex;
     justify-content: space-around;
+    flex-basis: 25%;
     text-align: center;
 }
 
@@ -109,13 +110,13 @@ nav ul li span {
 .state {
     display: flex;
     justify-content: space-around;
+    /* font-size: calc(1vw + 5px); */
     
 }
 
 .state > * {
     width: 24%;
 }
-
 /* .state {
     display: flex;
     justify-content: space-around;
@@ -156,18 +157,26 @@ nav ul li span {
         text-align: center;
     }
 
+    .container {
+        margin-bottom: 1rem;
+    }
+
     .total-info {
         flex-wrap: wrap;
     }
 
-    .states, .states > * {
-        font-size: 11pt
+    .container {
+        flex-basis: 40%;
+    }
+
+    .state {
+        font-size: 2.5vw;
     }
 }
 
 @media (max-width: 500px){
-    .states, .states > * {
-        font-size: 8pt
+    .state {
+        font-size: 3vw;
     }
 
     #title {
