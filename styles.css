@@ -108,6 +108,7 @@ nav ul li span {
 .state {
     display: flex;
     justify-content: space-around;
+    /* font-size: calc(1vw + 5px); */
     
 }
 
@@ -115,9 +116,6 @@ nav ul li span {
     width: 24%;
 }
 
-.col {
-    overflow-x: scroll;
-}
 
 /* .state {
     display: flex;
@@ -159,13 +157,13 @@ nav ul li span {
         flex-wrap: wrap;
     }
 
-    .states, .states > * {
-        font-size: 11pt
+    .state {
+        font-size: 2vw;
     }
 }
 
 @media (max-width: 500px){
-    .states, .states > * {
-        font-size: 8pt
+    .state {
+        font-size: 3vw;
     }
 }
