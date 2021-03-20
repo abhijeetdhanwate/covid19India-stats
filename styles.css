@@ -1,29 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 body {
     font-family: 'Quicksand', 'arial', sans-serif;
     margin: auto 3rem;
     font-weight: bolder;
+    letter-spacing: 1pt;
 }
 
-/* .title-credit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 1) !important;
+}
 
 nav ul{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid gray;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     padding-right: 2rem;
 }
 
@@ -35,14 +30,17 @@ nav ul li span {
     font-size: calc(2vw + 12px);
 }
 
+#credit {
+    font-size: 1rem;
+}
+
 #credit a{
     color: gray;
-    line-height: 2rem;
 }
 
 .total-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-basis: 25%;
     text-align: center;
 }
@@ -94,13 +92,6 @@ nav ul li span {
     text-align: left;
 }
 
-/* .state {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(5, 1fr);
-    padding-left: 0.8rem;
-} */
-
 .states {
     display: flex;
     flex-direction: column;
@@ -109,24 +100,16 @@ nav ul li span {
 
 .state {
     display: flex;
-    justify-content: space-around;
-    /* font-size: calc(1vw + 5px); */
-    
+    justify-content: space-around;    
 }
 
 .state > * {
     width: 24%;
 }
-/* .state {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0.8rem;
-} */
 
-/* .state-container {
-    width: 20%;
-    text-align: justify;
-} */
+.col {
+    padding-right: 1rem;
+}
 
 .state:nth-child(even){
     background-color: rgba(108,117,125, 0.2);
@@ -134,7 +117,7 @@ nav ul li span {
 
 .state-head {
     position: sticky;
-    top: 0;
+    top: calc(2vw + 22px);
     background-color: black;
     color: wheat;
 }
